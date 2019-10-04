@@ -1,0 +1,505 @@
+<!--THEME 10 BY SPARKSFALLING
+PLEASE KEEP THE CREDIT INTACT AND LIKE THE POST IF YOU USE.
+DO NOT USE AS A BASE CODE. THANK YOU. -->
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ 
+ 
+<head>
+ 
+    <meta name="color:bg" content="#FFFFFF">
+    <meta name="color:link" content="#a8a8a8">
+    <meta name="color:hover" content="#454545">
+    <meta name="color:infobg" content="#FCFCFC">
+    <meta name="color:text" content="#9A9A9A">
+    <meta name="color:tags" content="#EDEDED">
+    <meta name="color:scrollbar" content="#D6D5D5">
+    <meta name="color:border" content="#FAFAFA">
+   
+    <meta name="image:sidebar" content=""/>
+   
+    <meta name="text:linkA" content="">
+    <meta name="text:linkA url" content="/">
+    <meta name="text:linkB" content="">
+    <meta name="text:linkB url" content="/">
+    <meta name="text:linkC" content="">
+    <meta name="text:linkC url" content="/">
+    <meta name="text:linkD" content="">
+    <meta name="text:linkD url" content="/">
+ 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{Title}</title> {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+    <link rel="shortcut icon" href="{Favicon}" />
+    <link rel="alternate" type="application/rss+xml" href="{RSS}" />
+ 
+    <style type="text/css">
+ 
+    a {
+    color:{color:link};
+    text-decoration:none;
+    -moz-transition-duration:0.5s;
+    -webkit-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    }
+   
+    a:hover {
+    color:{color:hover};
+    text-decoration:none;
+    -moz-transition-duration:0.5s;
+    -webkit-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    }
+ 
+   
+::-webkit-scrollbar {background-color:{color:infobg}; height:8px; width:8px}
+::-webkit-scrollbar-thumb:vertical {background-color:{color:scrollbar}; height:50px}
+::-webkit-scrollbar-thumb:horizontal {background-color:{color:scrollbar}; height:8px!important}
+ 
+body {
+    font-size:8px;
+background-color:{color:bg};
+font-family:Cambria;
+text-transform:lowercase;
+font-weight:normal;
+letter-spacing:2px;
+}
+ 
+ 
+ 
+ 
+h1 {
+font-weight:normal;
+font-size:8px;
+text-align:center;
+font-style:normal;
+line-height:80%;
+font-family:cambria;
+letter-spacing:1px;
+text-transform:lowercase;
+color:{color:text};
+}
+ 
+h2 {
+font-size:8px;
+text-align:center;
+line-height:100%;
+letter-spacing:2px;
+color:{color:text};
+font-family:cambria;
+font-weight:normal;
+padding:5px;
+padding-bottom:2px;
+}
+ 
+ 
+blockquote {
+border-left:2px solid {color:text};
+padding-left:5px;
+margin:5px;
+}
+   
+    #theme {
+    font-family:cambria;
+    background-color:{color:bg};
+    width:700px;
+    margin: 0 auto -12px auto;
+    text-align: center;
+    }
+   
+    #sidebar {
+    color:{color:text};
+    position:fixed;
+    width:150px;
+    height:410px;
+    margin-top:100px;
+    margin-left:-40px;
+    text-align:left;
+    }
+   
+    #sidebar img {
+    width:150px;
+    height:410px;
+    margin-bottom:10px;
+    border:1px solid #cacaca;
+    padding:5px;
+    }
+ 
+   
+    .links {
+    display:inline;
+    margin-top:-430px;
+    margin-left:3px;
+    font-size:8px;
+    font-style:italic;
+    padding:20px;
+    padding-left:30px;
+    padding-right:30px;
+    font-family:cambria;
+    text-transform:lowercase;
+    text-align:center;
+    width:100px;
+    position:fixed;
+    line-height:170%;
+    -moz-transition-duration:1s;
+    -webkit-transition-duration:1s;
+    -o-transition-duration:1s;
+    }
+   
+    .links a{
+    display:block;
+    color:{color:link};
+    background-color:#fff;
+    padding:2.5px;
+    margin-top:2px;
+    letter-spacing:2px;
+    text-decoration:none;
+    -moz-transition-duration:1s;
+    -webkit-transition-duration:1s;
+    -o-transition-duration:1s;
+    }
+   
+    .links a:hover{
+   letter-spacing:8px;
+    -moz-transition-duration:1s;
+    -webkit-transition-duration:1s;
+    -o-transition-duration:1s;
+    }
+   
+   #sidebar:hover .links{
+     margin-top:-345px;
+    color:{color:hover};
+    -moz-transition-duration:1s;
+    -webkit-transition-duration:1s;
+    -o-transition-duration:1s;
+    }
+   
+    #sidebar:hover #desc{
+    opacity:1;
+     background:#fff;
+    position:fixed;
+    -moz-transition-duration:1s;
+    -webkit-transition-duration:1s;
+    -o-transition-duration:1s;
+    }
+   
+    #desc{
+    opacity:0;
+    position:fixed;
+    width:83px;
+    padding:8px;
+    background-color:#fff;
+    margin-top:-415px;
+    margin-left:33px;
+    text-align:center;
+    font-size:8px;
+    font-style:italic;
+    font-family:cambria;
+    color:{color:text};
+    letter-spacing:1px;
+    line-height:150%;
+    -moz-transition-duration:1s;
+    -webkit-transition-duration:1s;
+    -o-transition-duration:1s;
+    }
+   
+    #desc a:hover{
+        opacity:1;
+        background:#fff;}
+   
+    #desc:hover {
+    background-color:#fff;
+    }
+   
+ 
+    .pagi {
+    font-size:15px;
+    margin-top:-455px;
+    margin-left:-30px;
+    display:block;
+    width:100px;
+    font-style:italic;
+    font-family:cambria;
+    text-transform:lowercase;
+    letter-spacing:3px;
+    text-align:center;
+    }
+   
+    .pagi a {
+    color:{color:link};
+    margin-top:-460px;
+    }
+   
+    #stuffcontainer {
+    float:left;
+    margin-left:190px;
+    margin-top:-20px;
+    text-align:justify;
+    background-color:{color:bg};
+    color:{color:text};
+    font-family:cambria;
+    margin-bottom: 35px;
+    }
+ 
+ 
+    #stuff {
+    width:500px;
+    margin-top:75px;
+    text-align:justify;
+    font-size:8px;
+    line-height:90%;
+    letter-spacing:0x;
+    color:{color:text};
+    }
+ 
+    .caption {
+    width:500px;
+    text-align:justify;
+    line-height:120%;
+    background-color:{color:infobg};
+    }
+   
+    .ask {
+    padding:10px;
+    text-align:left;
+    color:{color:text};
+    background-color:{color:infobg};
+    border-bottom:1px solid {color:border};
+    border-right:1px solid {color:border};
+    }
+   
+    .ans {
+    text-align:left;
+    color:{color:text};
+    }
+ 
+    .audio {
+    width:500px;
+    padding-bottom:10px;
+    background-color:{color:infobg};
+    }
+   
+    .albumart {
+    float:left;
+    padding:0px 10px 10px 0px;
+    }
+   
+    .albumart img {
+    width:45px;
+    height:45px;
+    }
+   
+    .playercontainer {
+    text-align:left;
+    padding:10px;
+    background-color:#ffffff;
+    width:480px;
+    }
+   
+    .audioinfo {
+    padding:10px;
+    color:{color:text};
+    }
+ 
+    #postinfo {
+    width:490px;
+    padding:5px;
+    font-size:7px;
+    color:{color:link};
+    text-transform:lowercase;
+    font-style:normal;
+    font-family:cambria;
+    font-style:italic;
+    letter-spacing:2px;
+    text-align:center;
+    -moz-transition-duration:0.5s;
+    -webkit-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    }
+ 
+    #postinfo a {
+    color:{color:link};
+    font-family:cambria;
+    text-align:center;
+    letter-spacing:1px;
+    font-style:normal;
+    }
+   
+    #postinfo a:hover {
+    color:{color:hover};
+    }
+   
+    .note {
+    text-transform:lowercase;
+    background-color:{color:infobg};
+    font-style:normal;
+    letter-spacing:0px;
+    font-size: 9px;
+    text-align:left;
+    line-height:90%;
+    margin-left:-40px;
+    }
+   
+    .note li {
+    list-style-type:none;
+    border-bottom:1px solid {color:border};
+    padding:10px 25px 10px 25px;
+    text-align:left;
+    margin:0px;
+    -moz-transition-duration:0.5s;
+    -webkit-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    }
+       
+    .tags {
+    font-style:normal;
+    width:500px;
+    text-transform:lowercase;
+    font-style:normal;
+    color:{color:tags};
+    letter-spacing:2px;
+    line-height:120%;
+    font-size:8px;
+    text-align:center;
+    padding:2px;
+    -moz-transition-duration:0.5s;
+    -webkit-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    }
+   
+    .tags a {
+    color:{color:tags};
+    letter-spacing:1px;
+    padding:1px;
+    }
+   
+    .tags a:hover {
+    color:{color:link};
+    }
+   
+    ul.chat, .chat ol, .chat li {
+    list-style:none;
+    margin:0px;
+    padding:2px;
+    }
+   
+    .label {
+    text-decoration:underline;
+    font-weight:700;
+    background-color:{color:infobg};
+    margin-right:5px;
+    }
+   
+    #cred {
+    position:fixed;
+    font-size:8px;
+    font-weight:normal;
+    line-height:150%;
+    letter-spacing:2px;
+    right:10px;
+    bottom:10px;
+    text-transform:uppercase;
+    text-align:center;
+    }
+   
+    #cred a {
+    padding:3px;
+    color:#8c8c8c;
+    font-family:8px;
+    text-transform:lowercase;
+    font-style:italic;
+    -moz-transition-duration:0.5s;
+    -webkit-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+    }
+ 
+    {CustomCSS}
+ 
+    </style></head>
+ 
+<body>
+<div id="theme">
+<div id="sidebar">
+<img src="{image:sidebar}">
+<div class="links">
+{block:IfLinkA}
+<a href="{text:linkA url}">{text:linkA}</a>
+{/block:IfLinkA}
+{block:IfLinkB}
+<a href="{text:linkB url}">{text:linkB}</a>
+{/block:IfLinkB}
+{block:IfLinkC}
+<a href="{text:linkC url}">{text:linkC}</a>
+{/block:IfLinkC}
+{block:IfLinkD}
+<a href="{text:linkD url}">{text:linkD}</a>
+{/block:IfLinkD}
+</div>
+<div id="desc">
+{Description}
+</div>
+{block:Pagination}
+<div class="pagi">
+{block:PreviousPage}
+<a href="{PreviousPage}">«</a>
+{/block:PreviousPage}
+{block:NextPage}
+<a href="{NextPage}">»</a>
+{/block:NextPage}
+</div>
+{/block:Pagination}
+</div>
+ 
+  <div id="stuffcontainer">
+ 
+{block:Posts}
+ 
+<div id="stuff">
+ 
+{block:Text}{block:Title}<h2>{Title}</h2>{/block:Title}{Body}{/block:Text}
+ 
+{block:Quote}<h2>“{Quote}”</h2><h1>{Source}</h1>{/block:Quote}
+ 
+{block:Link}<a href="{URL}"><h2>{Name}</h2></a>
+{block:Description}<p>{Description}</p>{/block:Description}{/block:Link}
+ 
+{block:Photo}<center><img src="{PhotoURL-500}"/></center>{block:Caption}{Caption}{/block:Caption}{/block:Photo}
+ 
+{block:Photoset}<center>{Photoset-500}</center>
+{block:Caption}{Caption}{/block:Caption}{/block:Photoset}
+ 
+{block:Chat}<ul class="chat">{block:Title}<h2>{Title}</h2>{/block:Title}{block:Lines}<li>{block:Label}<span class="label">{Label}</span>{/block:Label}&nbsp;{Line}</li>{/block:Lines}</ul>{/block:Chat}
+ 
+{block:Video}{Video-500}{block:Caption}{Caption}{/block:Caption}{/block:Video}
+ 
+{block:Answer}<div class="ask">{Asker} asked: {Question}</div><div class="ans">{Answer}</div>{/block:answer}
+ 
+{block:Audio}<div class="audio">{block:AlbumArt}<div class="albumart"><img src="{AlbumArtURL}"/></div>{/block:AlbumArt}
+<div class="audioinfo">{block:TrackName}<b>Title:</b> {TrackName}<br />{/block:TrackName}{block:Artist}<b>Artist:</b> {Artist}<br />{/block:Artist}
+{/block:ExternalAudio}<b>Played:</b> {PlayCount} times</div>
+<br><div class="playercontainer">{AudioPlayerWhite}</div></div>
+{block:Caption}{Caption}{/block:Caption}<br>{/block:Audio}
+ 
+ 
+ 
+{block:Date}<div id="postinfo">{MonthNumberWithZero}-{DayOfMonthWithZero} / <a href="{Permalink}">{24Hour}:{Minutes}</a>{block:NoteCount} / <a href="{Permalink}">{NoteCountWithLabel}</a>{/block:NoteCount}{block:RebloggedFrom} / <a href="{ReblogParentURL}">{ReblogParentName}</a>{/block:RebloggedFrom}
+{block:ContentSource} / <a href="{SourceURL}">{SourceLink}</a>{/block:ContentSource}</div>{/block:Date}
+{block:HasTags}
+<div class="tags">
+{block:Tags}<a href="{TagURL}">#&nbsp;{Tag}</a>{/block:Tags}</div>
+{/block:HasTags}
+<div class="note">
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+</div>
+</div>
+{/block:Posts}
+ 
+ 
+</div>
+ 
+<div id="cred"><a href="http://sparksfalling.tumblr.com/"><img src="http://static.tumblr.com/61fvshe/FU4mj3dmf/credit.png"></a></div>
+ 
+</div>
+</div>
+</div>
+</body>
+</html>
