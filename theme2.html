@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+ 
+ 
+<meta name="color:background" content="#ffffff"/>
+<meta name="color:title" content="#8b8b8a"/>
+<meta name="color:border" content="f3f1f1"/>
+<meta name="color:text" content="#b6b5b5"/>
+<meta name="color:link" content="#a8a7a7"/>
+<meta name="color:linkhover" content="f1d65d"/>
+ 
+ 
+<meta name="font:title" content="" />
+<meta name="font:body" content="calibri" />
+<meta name="font:pagination" content="calibri" />
+ 
+<meta name="image:sidebar" content=""/>
+ 
+ 
+<!-- LINKS -->
+<meta name="text:Link 1 title" content="link 1" />
+<meta name="text:Link 1" content="/" />
+<meta name="text:Link 2 title" content="link 2" />
+<meta name="text:Link 2" content="/" />
+<meta name="text:Link 3 title" content="link 3" />
+<meta name="text:Link 3" content="/" />
+ 
+ 
+<style type="text/css">
+ 
+::-webkit-scrollbar-thumb:vertical {background-color: {color:text}; height:100px;}
+ 
+::-webkit-scrollbar-thumb:horizontal {background-color: {color:text}; height:10px !important;}
+ 
+::-webkit-scrollbar {height:10px; width:7px; color: {color:text};}
+ 
+ 
+ 
+/* --- BODY ---*/
+ 
+body {background:{color:background}; margin:0px; color:{color:text}; font-family:cambria; font-size:9px; font-weight:normal;line-height:100%;}
+ 
+ 
+blockquote {
+border-left:1px solid #f8f8f8;
+padding-left:2px;
+margin:5px;
+}
+ 
+ 
+a {color:#b1b0b0; text-decoration:none; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out; }
+ 
+a:hover {text-decoration:none; color:#676767;}
+ 
+img {none;}
+ 
+ 
+#entries {padding:10px; width:500px; margin-left:500px; margin-top:50px;}
+ 
+#post {width:500px; padding-bottom:30px;}
+ 
+ 
+/* --- SIDEBAR ---*/
+ 
+#sidebar {width:212px; position:fixed; margin-left:-10px; margin-top:120px;}
+ 
+#title {
+    position:fixed;
+    font-family:"consolas";
+    color: {color:title};
+    font-size:12px;
+    text-transform:lowercase;
+    margin-left:310px;
+    margin-top:-13px;
+}
+ 
+#sidebarimage {
+    width: 120px;
+    margin-left:310px;
+    {block:iflightside}
+    opacity:.80;
+    {/block:iflightside}
+}
+ 
+#sidebarimage img {
+    width:120px;
+    border: 1px solid;
+    border-color: #c0c0c0;
+    padding:3px;
+    margin-left:0px;
+}
+ 
+ 
+#sidebarimage:hover .desc{
+    opacity:.8;
+    background:#ffffff;
+    -moz-transition-duration:0.8s;
+    -webkit-transition-duration:0.8s;
+    -o-transition-duration:0.8s;
+}
+ 
+h1{ color:{color:title}; font-size:12px; font-family:times new; text-transform:uppercase; margin-bottom:-2px;}
+ 
+.desc {
+    position:fixed;
+    opacity:0;
+    text-align:center;
+    font-size:9px;
+    color:{color:description};
+    margin-top:4px;
+    width:100px;
+    margin-left:4px;
+    padding:10px;
+    height:140px;
+    }
+ 
+.lin{
+    color:#c7c7c7;
+    margin-top:0px;
+    margin-left:-25px;
+    padding: 8px;
+    width:150px;
+    line-height:10px;
+    font-size:12px;
+    text-transform:lowercase;
+    font-weight:bold;
+}
+ 
+.lin a:hover {
+    background-color:#ffff00;
+    -webkit-transition-duration: .90s;
+    -moz-opacity:1;
+    -khtml-opacity: 1;
+    text-transform:lowercase;
+}
+ 
+.linhover{
+    background-color:transparent;
+    position:fixed;
+    width:100px;
+    height:195px;  
+    margin-top:-30px;
+    margin-left:308px;
+    line-height:15px;
+    padding:5px;
+    opacity:0;
+    transition: all 1s ease-out; letter-spacing: 1px;
+    -o-transition:  all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+}
+ 
+.linkhover:hover {
+    text-align: center;
+    background-color:#ffff00;
+    opacity:1.0;
+    transition: all 1s ease-out;
+    -o-transition:  all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+}  
+ 
+#nav ul {
+    padding:2px;
+    margin:0px;
+    width:100%;
+    list-style:none;
+    height:16px;
+    line-height:16px;
+    margin-top:16px;
+    vertical-align:middle;
+    text-align:center;
+}
+ 
+#nav ul li {
+    display:block;
+}
+ 
+#nav ul li a {
+    padding:3px;
+    display:block;
+    width:110px;
+    font-size:13px;
+    font-family:cambria;
+    text-transform:lowercase;
+    text-indent:7px;
+    color:#c7c7c7;
+    background-color:{color:navigation bg};
+    vertical-align:middle;
+    opacity:1;
+    -webkit-transition-duration:.90s;
+    -moz-opacity:1;    
+    -khtml-opacity: 1;
+}
+ 
+#sidebar:hover .lin {opacity:1;}
+#sidebar:hover .linhover {opacity:1;}
+ 
+#questions {background-color: #fcfcfc; color: {color:text}; border-top: dotted 1px {color:border}; margin-left:0px; padding:11px; margin-top: 5px; margin-bottom:5px; font-family:cambria; font-size:10px; font-style:normal; text-align:left;}
+ 
+.note {padding:0px 20px 0px 20px; background-color:#FFFFFF;text-transform:lowercase; letter-spacing:0px; font-size: 11px; font-style:normal; text-align:left; line-height:120%;}
+   
+.note li {list-style-type:none; padding:5px 25px 5px 25px; text-align:left;
+margin-left:30px; margin-top:-50px;}
+ 
+#info {font-family:cambria; text-align:center; margin-top:5px; padding-top:5px; padding:5px; text-transform:lowercase; font-style:none; font-size:9px; line-height:80%; border-top: 1px solid #f8f8f8;}
+ 
+#pagination {position:fixed; font-size:9px; text-align:left; margin-top:-6.5px; padding-right:5px; margin-left:202px;width:166px; font-style:normal; padding-left:5px;}
+ 
+#tags {font-family:cambria; text-align:center; margin-top:-5px; padding-bottom:3px; text-transform:lowercase; font-style:none; font-size:9px;}
+ 
+.credit {position:fixed; bottom:15px; right:15px; font: 12px 'Inconsolata'; background: #fcfcfc; color: #cccccc; border: 1px solid #f2f2f2; text-transform:uppercase; letter-spacing: 0px; padding: 5px; cursor: crosshair;}
+.credit a{color:{color:linkhovercolor}; opacity:0.8;}
+.credit a:hover{color:{color:link}; opacity:1.0;}
+ 
+{CustomCSS}</style></head><body>
+ 
+ 
+<div id="sidebar">
+ 
+<div id="pagination">
+{block:Pagination}
+<div id="pagination">
+{block:PreviousPage}
+<a href="{PreviousPage}">←</a>
+{/block:PreviousPage}
+{block:NextPage}
+<a href="{NextPage}"> →</a>
+{/block:NextPage}
+</div>
+{/block:Pagination}</div>
+ 
+<div id="title">{Title}</div>
+<div id="sidebarimage"><div class="desc"><br><br>{Description}</div> <a href="/"><img src="{image:sidebar}"></a></div>
+<div class="linhover">
+<div class="lin">
+<div id="nav">
+<ul>
+<small>
+<a href="/">home</a> |
+<a href="/ask">mail</a> |
+{block:iflink1} <a href="{text:Link 1} |">{text:Link 1 Title}</a>{/block:iflink1}
+{block:iflink2} <a href="{text:Link 2} |">{text:Link 2 Title}</a>{/block:iflink2}
+{block:iflink3} <a href="{text:Link 3} |">{text:Link 3 Title}</a>{/block:iflink3}
+</small>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+<a href="{URL}">{Label}</a>{/block:Pages}{/block:HasPages}
+ 
+</div></center></i>
+ 
+ 
+</div>
+ 
+<div id="entries">{block:Posts}<div id="post">
+ 
+{block:Text}<h1>{block:Title}{Title}{/block:Title}</h1><i>{Body}</i>{/block:Text}
+ 
+{block:Photo}
+<center>{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}</center>{block:Caption}<i>{Caption}</i>{/block:Caption}
+{/block:Photo}
+ 
+{block:Photoset}
+<center>{Photoset-500}</center>{block:Caption}<i>{Caption}</i>{/block:Caption}
+{/block:Photoset}
+ 
+{block:Quote}<i>{Quote}{block:Source} —{Source}{/block:Source}{/block:Quote}</i>
+ 
+{block:Link}<h1><a href="{URL}" {Target}>{Name}</a></h1>{block:Description}<i>{Description}</i>{/block:Description}{/block:Link}
+ 
+{block:Chat}<i>{block:Title}<h1>{Title}</h1>{/block:Title}{block:Lines}{block:Label}<b><u>{Label}</u></b>{/block:Label} {Line}<br>{/block:Lines}{/block:Chat}</i>
+ 
+{block:Audio}{AudioPlayerWhite}{block:Caption}<i>{Caption}</i>{/block:Caption}{/block:Audio}
+ 
+{block:Video}{Video-500}{block:Caption}{Caption}{/block:Caption}{/block:Video}
+ 
+{block:Answer}<div id="questions">❝<b>{Asker}</b> sent: {Question}</div>
+<div id="answer"><i>{Answer}</i></div>{/block:answer}
+ 
+<div id="info">
+{block:Date}shared on <a href="{Permalink}">{month} {dayofmonth} {/block:Date}{/block:Date}</a>  {block:NoteCount} with <a href="{Permalink}">{NoteCountWithLabel}{/block:NoteCount}</a> <br><br>{block:RebloggedFrom} via <a href="{ReblogParentURL}">{ReblogParentName}</a> {/block:RebloggedFrom}</a> {block:ContentSource} <a href="{SourceURL}">(© {SourceLink}</a>){/block:ContentSource}</div>
+ 
+</div>
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+{/block:Posts}</div>
+ 
+ 
+ 
+</div>
+<div class="credit"><a href="http://quiffstmas.tumblr.com/"><img src="http://static.tumblr.com/61fvshe/FU4mj3dmf/credit.png"></a></div>
+                                 
+</body>
+ 
+</html>
