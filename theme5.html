@@ -1,0 +1,190 @@
+<!--theme 05 by sparksfalling.
+please keep the credit intact
+and like the post if you use.
+thank you.-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+</script><title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+ 
+ 
+<meta name="color:background" content="#ffffff"/>
+<meta name="color:border" content="f3f1f1"/>
+<meta name="color:text" content="#b6b5b5"/>
+<meta name="color:link" content="#a8a7a7"/>
+<meta name="color:linkhover" content="f1d65d"/>
+ 
+ 
+<meta name="font:title" content="" />
+<meta name="font:body" content="calibri" />
+<meta name="font:pagination" content="calibri" />
+ 
+<meta name="image:sidebar" content=""/>
+ 
+ 
+<!-- LINKS -->
+<meta name="text:ask link" content ="/ask" />
+<meta name="text:link 1" content="link 1" />
+<meta name="text:link 1 url" content="/" />
+<meta name="text:link 2" content="link 2" />
+<meta name="text:link 2 url" content="/" />
+<meta name="text:link 3" content="link 3" />
+<meta name="text:link 3 url" content="/" />
+ 
+ 
+<style type="text/css">
+ 
+/* --- BODY ---*/
+ 
+body {background:{color:background}; letter-spacing:1px; margin:0px; color:{color:text}; font-family:cambria; font-size:9px; text-transform:lowercase; line-height:110%;}
+ 
+ 
+blockquote {
+border-left:1px solid #f8f8f8;
+padding-left:2px;
+margin:5px;
+}
+ 
+ 
+a {color:{color:link}; text-decoration:none; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out; }
+ 
+a:hover {text-decoration:none; font-style:italic; font-weight:bold; color:{color:linkhover};}
+ 
+img {none;}
+ 
+ 
+#entries {padding:10px; background-color:#fcfcfc;width:535px; margin-left:500px; margin-top:50px; border:1px solid #efefef;}
+ 
+#post {width:500px; margin-bottom:12px; padding:15px;padding-bottom:5px; font-style:none; border-bottom:1px solid #efefef; }
+ 
+ 
+/* --- SIDEBAR ---*/
+ 
+#sidebar {width:200px; position:fixed; margin-left:80px; margin-top:100px;}
+ 
+#sidebarimage {}
+ 
+#sidebarimage img { margin-left:190px; height:145px;margin-top:-40px; padding:5px; padding-bottom:6px; background-color: #ffffff;}
+ 
+#description {padding: 6px; margin-left: 0px; margin-top: 5px; width: 124px; line-height: 100%; border-top: 1px solid #c0c0c0; padding-left:3px; text-transform:lowercase; text-align:center; font-family:cambria; font-size: 8px; font-style: none;}
+ 
+#links {position: fixed; text-align:center;font-family:cambria; width:133px; border-top:1px solid #c0c0c0;padding-top: 5px; padding-bottom:10px; margin-top:-16px; margin-left:204px; padding-left:0px; letter-spacing:1px;}
+#links a {padding 2px; padding-top: 2px; padding-bottom: 1px; margin-bottom: -10px; font-size:8px; font-style:none; text-align:center; text-transform:lowercase;}
+ 
+#questions {background-color: #fcfcfc; color: {color:text}; margin-left:0px; padding:11px; margin-top: 5px; margin-bottom:5px; font-family:cambria; font-size:10px; font-style:normal; text-align:left;}
+ 
+.note {padding:0px 20px 0px 20px; background-color:#FFFFFF;text-transform:lowercase; letter-spacing:0px; font-size: 11px; font-style:normal; text-align:left; line-height:120%;}
+   
+.note li {list-style-type:none; padding:5px 25px 5px 25px; text-align:left;
+margin-left:30px; margin-top:-50px;}
+ 
+#info {font-family:cambria; text-align:right; margin-top:5px; padding-top:5px; padding:5px; text-transform:lowercase; font-style:none; font-size:8px; line-height:80%;}
+ 
+#tags {font-family:cambria; text-align:right; margin-top:-5px; padding-bottom:3px; text-transform:lowercase; font-style:none; font-size:8px;}
+ 
+#pagination {
+    font-size:8px;
+    text-align:center;
+    font-family:calibri;
+    border-top:1px solid #c0c0c0;
+    border-bottom:1px solid #c0c0c0;
+    width:135px;
+    margin-top:2px;
+    margin-left:-3px;
+    padding-top:5px;
+    padding-bottom:5px;
+    letter-spacing: 5px;
+}
+ 
+.credit {position:fixed; bottom:15px; color: {color:background}; right:15px; font: 9px cambria; background: #dcdcdc; border: 1px solid #efefef; text-transform:lowercase; letter-spacing: 0px; padding: 5px; cursor: pointer;}
+.credit a{color:#737373; font-weight:bold; opacity:0.8;}
+.credit a:hover{color:{color:link}; opacity:1.0;}
+ 
+ 
+ 
+{CustomCSS}</style></head><body>
+ 
+ 
+<div id="sidebar">
+<div id="sidebarimage"><img src="{image:sidebar}"/></div><br>
+<div id="links">
+<a href="/">refresh</a>
+<a href="{text:ask link}">ask</a>
+<a href="{text:link 1 url}">{text:link 1}</a>
+<a href="{text:link 2 url}">{text:link 2}</a>
+<a href="{text:link 3 url}">{text:link 3}</a>
+<div id="description">{Description}</div>
+ 
+{block:Pagination}
+<div id="pagination">
+            {block:PreviousPage}
+                <a href="{PreviousPage}">«</a>
+            {/block:PreviousPage}
+ 
+            {block:JumpPagination length="6"}
+                {block:CurrentPage}
+                    <span class="current_page">{PageNumber}</span>
+                {/block:CurrentPage}
+ 
+                {block:JumpPage}
+                    <a class="jump_page" href="{URL}">{PageNumber}</a>
+                {/block:JumpPage}
+            {/block:JumpPagination}
+ 
+            {block:NextPage}
+                <a href="{NextPage}">»</a>
+            {/block:NextPage}
+        {/block:Pagination}
+</div>
+ 
+</div></center></i>
+ 
+ 
+</div>
+ 
+<div id="entries">{block:Posts}<div id="post">
+ 
+{block:Text}<h1>{block:Title}{Title}{/block:Title}</h1>{Body}{/block:Text}
+ 
+{block:Photo}
+<center>{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}</center>{block:Caption}{Caption}{/block:Caption}
+{/block:Photo}
+ 
+{block:Photoset}
+<center>{Photoset-500}</center>{block:Caption}{Caption}{/block:Caption}
+{/block:Photoset}
+ 
+{block:Quote}<i>{Quote}{block:Source} —{Source}{/block:Source}{/block:Quote}</i>
+ 
+{block:Link}<h1><a href="{URL}" {Target}>{Name}</a></h1>{block:Description}<i>{Description}</i>{/block:Description}{/block:Link}
+ 
+{block:Chat}<i>{block:Title}<h1>{Title}</h1>{/block:Title}{block:Lines}{block:Label}<b><u>{Label}</u></b>{/block:Label} {Line}<br>{/block:Lines}{/block:Chat}</i>
+ 
+{block:Audio}{AudioPlayerWhite}{block:Caption}<i>{Caption}</i>{/block:Caption}{/block:Audio}
+ 
+{block:Video}{Video-500}{block:Caption}{Caption}{/block:Caption}{/block:Video}
+ 
+{block:Answer}<div id="questions">❝<b>{Asker}</b> sent: {Question}</div>
+<div id="answer"><i>{Answer}</i></div>{/block:answer}
+ 
+<div id="info">
+{block:Date}shared on <a href="{Permalink}">{month} {dayofmonth} {/block:Date}{/block:Date}</a>  {block:NoteCount} with <a href="{Permalink}">{NoteCountWithLabel}{/block:NoteCount}</a> {block:RebloggedFrom} via <a href="{ReblogParentURL}">{ReblogParentName}</a> {/block:RebloggedFrom}</a> {block:ContentSource} <a href="{SourceURL}">(© {SourceLink}</a>){/block:ContentSource}</div>
+ 
+<div id="tags">
+{block:HasTags} {block:Tags} <a href="{TagURL}"># {Tag}</a>&nbsp;{/block:Tags}{/block:HasTags}</div>
+ 
+</div>
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+{/block:Posts}</div>
+ 
+ 
+ 
+</div>
+<div class="credit"><a href="http://sparksfalling.tumblr.com/"><img src="http://static.tumblr.com/61fvshe/FU4mj3dmf/credit.png"></a></div>
+                                 
+</body>
+ 
+</html>
