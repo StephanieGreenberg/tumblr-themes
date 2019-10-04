@@ -1,0 +1,344 @@
+<!--THEME 06 BY SPARKSFALLING
+PLEASE KEEP THE CREDIT INTACT AND LIKE THE POST IF YOU USE.
+DO NOT USE AS A BASE CODE. THANK YOU. -->
+<html>
+<head>
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+{block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+<link href='http://fonts.googleapis.com/css?family=Port+Lligat+Slab' rel='stylesheet' type='text/css'>
+ 
+<!--Default Variables-->
+<!--Colors-->    
+     
+<meta name="color:Background" content="#ffffff"/>
+<meta name="color:Text" content="#a5a5a4"/>
+<meta name="color:Link" content="#717581"/>
+<meta name="color:Hover" content="#333333"/>
+ 
+<!--Images-->
+ 
+<meta name="image:Background" content=""/>
+<meta name="image:Sidebar" content=""/>
+ 
+<!--Links-->
+ 
+<meta name="text:Link1" content="/" />
+<meta name="text:Link1 Title" content="" />
+<meta name="text:Link2" content="/" />
+<meta name="text:Link2 Title" content="" />
+     
+<style type="text/css">
+         
+body {
+background:{color:background};
+background-image: url('{image:background}') no-repeat fixed center;;
+margin:0px;
+margin-left:100px;
+color:{color:text};
+font-family:cambria;
+text-transform:lowercase;
+font-size:10px;
+line-height:100%;
+}
+   
+a {
+text-decoration:none;
+outline:none;
+-moz-outline-style:none;
+color:{color:link};
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease
+}
+     
+img {
+border:none;
+}
+       
+blockquote blockquote {
+padding-left:5px;
+border-left:1px solid;
+}
+     
+h1 {
+font-size:9px;
+font-family:times;
+text-transform:uppercase;
+}
+     
+a:hover {
+opacity:10;
+color:{color:hover};
+-webkit-transition: all 0.7s ease;
+-moz-transition: all 0.7s ease;
+-o-transition: all 0.7s ease
+}
+     
+small{
+font-size:9px;
+line-height:110%
+}
+       
+big {
+font-size:12px;
+line-height:110%
+}
+       
+b, strong{
+color:{color:text}
+}
+i, em {
+color:{color:text}
+}
+p{
+margin-top:5px;
+margin-bottom:5px
+}
+blockquote {
+padding:0px;
+padding-left:5px;
+margin:5px;
+border-left:1px dotted {color:text}
+}
+       
+blockquote img {
+max-width:300px
+}
+       
+ul, li img {
+max-with:250px
+}
+           
+.audio {width:500px;height:160px;}
+.albumart {width:150px;height:150px;position:absolute; border:1px dotted {color:text}; padding:2px;}
+.albumart img {width:150px;height:150px;float:left;}
+.playercontainer {display:block;width:150px;height:150px;background-color:#ffffff;position:absolute;}
+.player {margin-left:36px;margin-top:36px;width:25px;height:25px;
+overflow:hidden;background-color:white;}
+.audioinfo {margin-left:160px;float:left;width:200px;padding:2px;margin-top:2px;}
+     
+#entries {
+padding:10px;
+border:1px dotted #e0e0e0;
+padding-left:30px;
+padding-right:30px;
+padding-top:30px;
+width:500px;
+margin-left:350px;
+margin-top:30px;
+}
+     
+     
+#post {
+width:500px;
+padding-bottom:3px;
+font-family:times;
+opacity:1;
+}
+     
+#sidebar {
+width:120px;
+position:fixed;
+margin-left:110px;
+margin-top:150px;
+opacity:1;
+}
+ 
+#sidebarimage {width 120px;}
+     
+#sidebarimage img{
+width:120px;
+margin-top:-10px;
+padding:3px;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease
+}
+ 
+#sidebarimage a:hover{
+width:120px;
+background-color:#ffffff;}
+ 
+ 
+.links {
+    position:absolute;
+    width:90px;
+    line-height: 90%;
+    text-transform: uppercase;
+    position:fixed;
+    margin-left: -100px;
+    margin-top: 60px;
+    text-align: center;
+    margin-top:-110px;
+    display:block;
+    padding: 0px;
+    text-transform:uppercase;    
+    }
+   
+    .links a{
+   
+    font-family:cambria;
+    font-size:9px;
+    text-transform:lowercase;
+    color:#7a7a7a;
+    display:block;
+    padding-top:2px;
+    padding-bottom:2px;
+    padding-left:3px;
+    margin-top: 8px;
+    letter-spacing:2px;
+    opacity:.8;
+    background-color:#e8e8e8;
+    text-decoration:none;
+    -moz-transition-duration:1s;
+    -webkit-transition-duration:1s;
+    -o-transition-duration:1s;
+    }
+     .links a:hover {
+        -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg);
+}
+ 
+.description:hover {-webkit-transition: all 0.5s;-moz-transition: all 0.5s;transition: all 0.5s;opacity:.9;}
+#links {position: fixed; font-family:calibri; font-size:8px; padding-top: 4px; padding-bottom:0px; margin-top:-120px; margin-left:200px; padding-left:60px; letter-spacing:1px;}
+ 
+.description {text-transform:lowercase;font-family:times;font-size:9px; font-style:none; text-align:center; width:130px;height:100px;margin-left:0px;margin-top:-102px; padding-left:4px; padding:6px;opacity:0;background-color:#fff;z-index:-1;-webkit-transition: all 0.5s;-moz-transition: all 0.5s;transition: all 0.5s;}
+ 
+     
+#pagination {
+font-size:9px;
+width:100px;
+text-align:center;
+position:fixed;
+color:{color:link};
+font-family:times;
+letter-spacing:2px;
+margin-left:-103px;
+margin-top:-125px;
+}
+     
+#info {
+text-align:center;padding:5px;
+letter-spacing:2px;
+margin-top:5px;
+margin-bottom:10px;
+text-transform: lowercase;
+font-family:times;
+font-size:9px;
+}
+       
+#tags {
+font-family:times;
+letter-spacing:1px;
+text-transform:lowercase;
+font-size:9px;
+margin-top:4px;
+a {display:inline; background-color:{color:linkb};
+padding:-4px;
+text-align:left;
+-webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out; transition: all 0.6s ease-in-out;}  
+     
+#asker {
+float:left;
+margin-right:5px;
+}
+     
+#asked {
+font-family:consolas;
+text-transform:lowercase;
+letter-spacing:1px;
+padding-bottom:3px;
+}
+ 
+#notes {
+font-family:consolas;
+text-transform:lowercase;
+font-size:9px;
+}
+     
+#question {
+font-family:consolas;
+font-style:italic;
+font-size:10px;
+}
+     
+#answer {
+font-family:consolas;
+text-transform:uppercase;
+font-size:10px;
+}
+ 
+#credit {
+    position:fixed;
+    right:-100px;
+    bottom:0px;
+    padding:4px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:9px;
+    margin-bottom:3px;
+    margin-right:3px;
+    border:1px solid {color:line};
+}
+ 
+       
+{CustomCSS}</style></head><body>
+     
+<div id="sidebar">
+<div id="sidebarimage"><img src="{image:Sidebar}"></div>    
+<div class="links">
+<a href="/">home</a>
+<a href="/ask">ask</a>
+{block:ifLink1}<a href="{text:Link1}">{text:Link1 Title}</a>{/block:ifLink1}
+{block:ifLink2}<a href="{text:Link2}">{text:Link2 Title}</a>{/block:ifLink2}
+</div>
+     
+<div class="description">{Description}</div>
+     
+{block:Pagination}<div align="center" id="pagination">{block:PreviousPage}<a href="{PreviousPage}">←</a>{/block:PreviousPage}  {block:NextPage}<a href="{NextPage}">→</a>{/block:NextPage}</div>{/block:Pagination}
+</div>
+     
+<div id="entries">{block:Posts}<div id="post">
+     
+{block:Text}<h1>{block:Title}{Title}{/block:Title}</h1>{Body}{/block:Text}
+     
+{block:Photo}{LinkOpenTag}<img src="{PhotoURL-500}">{LinkCloseTag}{block:Caption}{Caption}{/block:Caption}{/block:Photo}
+     
+{block:Photoset}{Photoset-500}{block:Caption}{Caption}{/block:Caption}{/block:Photoset}
+     
+{block:Quote}{Quote}{block:Source} —{Source}{/block:Source}{/block:Quote}
+     
+{block:Link}<h1><a href="{URL}" {Target}>{Name}</a></h1>{block:Description}{Description}{/block:Description}{/block:Link}
+     
+{block:Chat}{block:Title}<h1>{Title}</h1>{/block:Title}{block:Lines}{block:Label}<b>{Label}</b>{/block:Label} {Line}<br>{/block:Lines}{/block:Chat}
+     
+{block:Audio}<left>{block:AlbumArt}<img src="{AlbumArtURL}" width="80px" height="80px" align="left" style="margin-right:10px" />{/block:AlbumArt}<span class="audio">{AudioPlayerBlack}</left></span>
+<br>{block:TrackName}<b>Title:</b> {TrackName}<br />{/block:TrackName}
+<br>{block:Artist}<b>Artist:</b> {Artist}<br />{/block:Artist}
+{/block:ExternalAudio}<br><b>Played:</b> {PlayCount} times
+{/block:Audio}
+     
+{block:Video}{Video-500}{block:Caption}{Caption}{/block:Caption}{/block:Video}
+     
+{block:Answer}<div id="asker"></div><div id="asked"><blockquote><small>{Asker} asked: {Question}</small></blockquote>{Answer}{/block:Answer}
+     
+<div id="info"> posted <a href="{Perimalink}">{block:Date}<a href="{Permalink}">{TimeAgo}</a>{/block:Date} with <a href="{Permalink}">{NoteCountWithLabel}</a> {block:RebloggedFrom} <a href="{ReblogParentURL}">VIA</a> {/block:RebloggedFrom}
+{block:ContentSource}<a href="{SourceURL}">(<a href="{SourceURL}">© <a href="{SourceURL}">{SourceLink}</a>)</a>{/block:ContentSource}{/block:RebloggedFrom}<div id="tags" st>
+{block:HasTags}<div id="tags">{block:Tags} #<a href="{TagURL}">{Tag}</a> {/block:Tags}</div>{/block:HasTags}</div></div>
+{/block:Posts}
+{block:PostNotes}<div id="notes">{PostNotes}</div>{/block:PostNotes}
+{/block:Posts}</div></div></div>
+<div style="font-size: 8px; letter-spacing: 1px; background-color:#dcdcdc;padding:4px;float: right; position: fixed; bottom: 5px; right: 5px; text-transform:lowercase;"><a href="http://sparksfalling.tumblr.com"><img src="http://static.tumblr.com/61fvshe/FU4mj3dmf/credit.png">
+</a></div>
+                                 
+</body>
+ 
+</div></div></div></div></div></div></div></div></div></div>
+</html>
